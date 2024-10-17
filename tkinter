@@ -1,0 +1,36 @@
+import tkinter as tk
+def plus ():
+    firstnum=entrynum.get1()
+    secondenum=entrynum.get2()
+    answer= firstnum + secondenum
+    entry.result.confing()text=answer
+
+window= tk.Tk()
+window=geometry('420X420')
+window.title('hello python')
+labelnum1 = label(window,text='first number')
+labelnum1.place(x=50,y=40)
+
+entrynum1= entry(window,width=30)
+entrynum1.place(x=150,y=40)
+
+labelnum2= label(window,text='first number')
+labelnum2.place(x=60,y=70)
+
+entrynum2= entry(window,width=30)
+entrynum2.place(x=150,y=40)
+
+
+button_add=Button(window,text='substrat')
+button.place(x=120,y=140)
+
+button.sub=Button(window,tex='subscrib')
+button.place(x=120, y=120)
+
+labelresult=label(window,text= 'result')
+labelresult.place(X=150,Y=140)
+
+entry_result=Entry(window,width=30)
+entry_result.place(x=100,y=200)
+
+window.mainloop()
