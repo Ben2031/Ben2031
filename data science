@@ -1,0 +1,23 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
+from sklearn import linear_model as sk
+
+# Define the data
+x_values = np.array([1, 2, 3, 4, 5]).reshape(-1, 1)
+y_values = np.array([2, 3, 5, 4, 5])
+
+# Create the scatter plot
+plt.scatter(x_values, y_values)
+plt.xlabel("x value")
+plt.ylabel("y value")
+plt.title("Scatter plot for the x and y values")
+
+# Fit the linear regression model
+model = sk.LinearRegression()
+model.fit(x_values, y_values)
+reg = model.predict(x_values)
+
+# Plot the regression line
+plt.plot(x_values, reg, color="yellow")
+plt.show()
